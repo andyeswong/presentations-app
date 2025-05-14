@@ -125,7 +125,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Credits
 
-- Developed by [Your Name/Company]
+- Developed by Andres Wong
 - Icons by [Heroicons](https://heroicons.com/)
 - UI Framework by [Tailwind CSS](https://tailwindcss.com/)
 
