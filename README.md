@@ -23,6 +23,26 @@ A modern, feature-rich presentation application that allows users to create, edi
 - **Visual Slide Previews**: See thumbnails of slides in the presentation listing
 - **Dark Mode Support**: Full application dark mode compatibility
 
+## Security
+
+### HTTPS Enforcement
+
+The application will automatically enforce HTTPS when running in production environments. This is controlled through the following environment variables in your `.env` file:
+
+```
+APP_ENV=production  # Set to 'production' or 'prod' to activate HTTPS enforcement
+FORCE_HTTPS=true    # Can be set to false to disable HTTPS enforcement even in production
+```
+
+The HTTPS enforcement adds several security headers:
+- Strict-Transport-Security (HSTS)
+- X-Content-Type-Options
+- X-XSS-Protection
+- X-Frame-Options
+- Referrer-Policy
+
+To configure these security features, you can modify the `config/security.php` file.
+
 ## Technologies Used
 
 - **Backend**:
